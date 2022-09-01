@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>Simple Calculator</title>
+<script language="JavaScript">
+function SumField()
+{
+var number1=parseFloat(window.document.form.field1.value);
+var number2=parseFloat(window.document.form.field2.value);
+var sum=number1+number2;
+window.document.form.result.value=sum;
+}
+
+function SubtractFields()
+{
+var number1=parseFloat(window.document.form.field1.value);
+var number2=parseFloat(window.document.form.field2.value);
+var sum=number1-number2;
+window.document.form.result.value=sum;
+}
+
+function MultiplyFields()
+{
+var number1=parseFloat(window.document.form.field1.value);
+var number2=parseFloat(window.document.form.field2.value);
+var res=number1*number2;
+window.document.form.result.value=res;
+}
+
+function DivFields()
+{
+var number1=parseFloat(window.document.form.field1.value);
+var number2=parseFloat(window.document.form.field2.value);
+var res=number1/number2;
+window.document.form.result.value=res;
+}
+
+function PotentFields()
+{
+var number1=parseFloat(window.document.form.field1.value);
+var number2=parseFloat(window.document.form.field2.value);
+var res=Math.pow(number1, number2);
+window.document.form.result.value=res;
+}
+
+</script>
+</head>
+<body>
+<form name="form">
+1st Number: <input type="text" name="field1"><br>
+<br>
+2nd Number: <input type="text" name="field2"><br>
+<br>
+Result: <input type="text" name="result"><br>
+<br>
+<input TYPE="Button" VALUE="+" onClick="SumField();">
+<input TYPE="Button" VALUE="-" onClick="SubtractFields();">
+<input TYPE="Button" VALUE="*" onClick="MultiplyFields();">
+<input TYPE="Button" VALUE="/" onClick="DivFields();">
+<input TYPE="Button" VALUE="^" onClick="PotentFields();">
+</form>
+</body>
+</html>
